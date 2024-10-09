@@ -1,0 +1,93 @@
+body{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    margin: 0%;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 15%;
+    z-index: 1;
+}
+
+.card{
+    position: absolute;
+    width: 12%;
+    height: 100%;
+    background-color: whitesmoke;
+    z-index: 2;
+    border-radius: 3%;
+    box-shadow: 0 0 5px 0 rgb(184, 184, 184);
+}
+
+#card1{
+margin-left: 27%;
+}
+
+#card2{
+margin-left: 40%;
+}
+
+#card3{
+margin-left: 53%;
+margin-right: 15%;
+}
+
+.card:hover{
+    background-color: rgb(209, 209, 209);
+}
+
+img{
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.logo{
+    margin-top: 3%;
+}
+
+.link{
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.linkclass {
+    color: gray;
+    text-decoration: none;
+}
+
+.title{
+    margin-top: -25%;
+    margin-left: 40%;
+}
+
+.textbody{
+    margin-top: 4%;
+    margin-left: 40%;
+}
+
+@media (max-width: 768px){
+    .container{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: 10px 0;
+        left: 0;
+        top: 0;
+    }
+
+    #card1, #card2, #card3 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
